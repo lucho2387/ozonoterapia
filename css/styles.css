@@ -11687,3 +11687,7 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.tituloTamaño {
+  font-size: 15px;
+}
