@@ -324,6 +324,7 @@ $(".botonArriba").css({
     "bottom": "1rem",
     "display": "block",
     "background": "#64a19d",
+    "padding: 0.1rem 0.5rem",
     "transition": "all 0.5s linear",
     "border-radius": "50%",
     "cursor": "pointer",
