@@ -11573,8 +11573,8 @@ body {
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 @media (min-width: 992px) {
@@ -11688,6 +11688,4 @@ body {
   padding: 5rem 0;
 }
 
-.tituloTamaño {
-  font-size: 15px;
-}
+
