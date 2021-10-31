@@ -5753,6 +5753,9 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 576px) {
+  .tituloTamaño {
+    font-size: 20px;
+  }
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
