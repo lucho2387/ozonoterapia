@@ -508,7 +508,7 @@ $(document).ready(function () {
 
 
 //AJAX y JSON
-let urlContacto = "http://127.0.0.1:5500/js/contacto.json";
+let urlContacto = "https://github.com/lucho2387/ozonoterapia/blob/main/js/contacto.json";
 
 $(document).ready(function () {
 
