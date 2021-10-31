@@ -320,7 +320,7 @@ $("#limpiarCampos").click(function(evento) {
 //Estilos
 $(".botonArriba").css({
     "position": "fixed",
-    "right": "1.5rem",
+    "right": "2.5rem",
     "bottom": "1rem",
     "display": "block",
     "background": "#64a19d",
