@@ -5769,10 +5769,6 @@ textarea.form-control-lg {
   .modal-sm {
     max-width: 300px;
   }
-  h1 {
-    font-size: 15px;
-  }
-  
 }
 @media (min-width: 992px) {
   .modal-lg,
