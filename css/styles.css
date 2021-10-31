@@ -5753,7 +5753,7 @@ textarea.form-control-lg {
 }
 
 @media (min-width: 576px) {
-  .tituloTamaño {
+  .masthead .tituloTamaño {
     font-size: 20px;
   }
   .modal-dialog {
