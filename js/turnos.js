@@ -494,33 +494,33 @@ $(document).ready(function () {
 
 //Datos de Contacto JSON
 
-var Contacto = `{
-                    "Direccion": "Aguilares, Tucumán",
-                    "Correo": "jorgealia@gmail.com",
-                    "Teléfono" : "+54 (381) 1234567"
-                }`
-var toJson = JSON.parse(Contacto);
-// console.log(toJson);
+// var Contacto = `{
+//                     "Direccion": "Aguilares, Tucumán",
+//                     "Correo": "jorgealia@gmail.com",
+//                     "Teléfono" : "+54 (381) 1234567"
+//                 }`
+// var toJson = JSON.parse(Contacto);
+// // console.log(toJson);
 
-document.getElementById("direccionContacto").innerHTML = toJson.Direccion;
-document.getElementById("correoContacto").innerHTML = toJson.Correo;
-document.getElementById("telefonoContacto").innerHTML = toJson.Teléfono;
+// document.getElementById("direccionContacto").innerHTML = toJson.Direccion;
+// document.getElementById("correoContacto").innerHTML = toJson.Correo;
+// document.getElementById("telefonoContacto").innerHTML = toJson.Teléfono;
 
 
 //AJAX y JSON
 // let urlContacto = "http://127.0.0.1:5500/js/contacto.json";
 
-// $(document).ready(function () {
+$(document).ready(function () {
 
-//     $.get(urlContacto, function (respuesta, estado) {
-//         if (estado === "success") {
+    $.getJSON("contacto.json", function (respuesta, estado) {
+        if (estado === "success") {
             
-//             let misDatos = respuesta;
-//             for (const dato of misDatos) {
-//                 document.getElementById("direccionContacto").innerHTML = misDatos[0].Direccion;
-//                 document.getElementById("correoContacto").innerHTML = misDatos[0].Correo;
-//                 document.getElementById("telefonoContacto").innerHTML = misDatos[0].Teléfono;
-//             }
-//         }
-//     });
-// });
+            let misDatos = respuesta;
+            for (const dato of misDatos) {
+                document.getElementById("direccionContacto").innerHTML = misDatos[0].Direccion;
+                document.getElementById("correoContacto").innerHTML = misDatos[0].Correo;
+                document.getElementById("telefonoContacto").innerHTML = misDatos[0].Teléfono;
+            }
+        }
+    });
+});
