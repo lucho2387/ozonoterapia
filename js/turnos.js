@@ -508,11 +508,11 @@ $(document).ready(function () {
 
 
 //AJAX y JSON
-// let urlContacto = "http://127.0.0.1:5500/js/contacto.json";
+let urlContacto = "js/contacto.json";
 
 $(document).ready(function () {
 
-    $.getJSON("contacto.json", function (respuesta, estado) {
+    $.getJSON(urlContacto, function (respuesta, estado) {
         if (estado === "success") {
             
             let misDatos = respuesta;
